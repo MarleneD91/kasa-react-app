@@ -6,7 +6,7 @@ const Gallery = () => {
     return(
         <div className="gallery">
             {housingData.map(element =>(
-                <Card cover={element.cover} title={element.title} />
+                <Card cover={element.cover} title={element.title} key={element.id}/>
             ))}
         </div>
     )
