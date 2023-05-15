@@ -1,6 +1,6 @@
 import React from "react";
 import WhiteLogo from "./logo-footer.png";
-import '../../sass/footer.scss'
+import '../../sass/components/footer.scss'
 
 const Footer = () => {
     return(

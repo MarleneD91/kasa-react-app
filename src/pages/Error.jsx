@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import '../sass/error.scss'
+import '../sass/pages/error.scss'
 
 const Error = () => {
     return(

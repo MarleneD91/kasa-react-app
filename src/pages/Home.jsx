@@ -1,7 +1,10 @@
 import React from 'react';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
-import HousingGallery from '../components/Home/HousingGallery';
+import Gallery from '../components/Home/Gallery';
+import '../sass/pages/home.scss'
+import Banner from '../components/Common/Banner';
+import Img from "../components/Common/home-banner-img.png"
 
 
 const Home = () => {
@@ -9,9 +12,8 @@ const Home = () => {
         <div>
             <Header/>
             <div className="main-home">
-                <div className='cards-container'>
-                <HousingGallery/> 
-                </div>
+                <Banner img={Img}/>
+                <Gallery/> 
             </div>
             <Footer/>        
         </div> 

@@ -1,0 +1,15 @@
+@use "sass:math";
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background: #F7F7F7;
+    border-radius: 25px;
+    border-radius: 25px;
+    margin: 43px 100px;
+
+
+}
