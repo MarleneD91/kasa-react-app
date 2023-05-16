@@ -5,17 +5,24 @@
     flex-direction: column;
     align-items: center;
     color: vars.$main-pink;
-    margin: 30px;
     font-family: vars.$main-fonts;
     p{
-        font-size: 30px;
+        font-size: 36px;
+        margin-top: 66px;
+        font-weight: 500;
+        line-height: 142.6%;
     }
     a{
-        text-decoration: none;
         color:vars.$main-pink;
+        margin-top: 182px;
+        margin-bottom: 159px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 142.6%;
     }
-}
-.error-number {
-    font-weight: 800;
+    .error-number {
+    font-weight: 700;
     font-size: 240px;
+    margin-top: 169px;
+    }
 }

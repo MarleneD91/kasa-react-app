@@ -5,7 +5,7 @@ const Banner = (props) => {
         <div className='banner'>
             <div className='overlay'></div>
             <img src={props.img} />
-            <p>Chez vous, partout et ailleurs</p>
+            <p>{props.text}</p>
         </div>
     )
 }

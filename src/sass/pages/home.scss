@@ -1,3 +1,16 @@
 @use '../components/_gallery.scss';
 @use '../components/_card.scss';
-@use '../components/banner'
+@use '../components/_banner.scss';
+
+.overlay:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background:  rgba(0,0,0,0.3) ;
+    border-radius: 25px;
+}

@@ -17,28 +17,32 @@
     border-radius: 10px; 
     }
 }
-    .card-content{
+.card-content{
+    width: 100%;
+    height: 340px;
+    img {
+        object-fit: cover;
         width: 100%;
-        height: 340px;
-        img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-            display: block;
-            z-index: -1;
-        }
-        p {
-            position: absolute;
-            left: math.div(20px, 340px)*100%;
-            bottom: math.div(20px, 340px)*100%;
-            font-family: vars.$main-fonts;
-            width: 70%;
-            z-index: 2;
-            box-shadow: initial;
-            color: #FFFFFF;
-        }
+        height: 100%;
+        border-radius: 10px;
+        display: block;
+        z-index: -1;
     }
+    p {
+        position: absolute;
+        left: math.div(20px, 340px)*100%;
+        bottom: math.div(20px, 340px)*100%;
+        font-family: vars.$main-fonts;
+        width: 70%;
+        z-index: 2;
+        box-shadow: initial;
+        color: #FFFFFF;
+
+    } 
+    :hover {
+        box-shadow: none !important ;
+    }
+}
 .gradient:after {
     content: " ";
     z-index: 1;
