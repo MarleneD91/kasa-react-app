@@ -17,14 +17,16 @@
     }
     p{
         position: absolute;
-        left: math.div(273px, 1440px)*100%;
         top: 78px;
+        left: 22%;
         z-index: 2;
         color: #FFFFFF;
+        text-align: center;
         font-family: vars.$main-fonts;
         font-weight: 500;
         font-size: 48px;
         line-height: 68px;
         margin:0;
+        padding:0;
     }
 }
