@@ -28,7 +28,7 @@ const Slider = ({slides}) => {
                 <FontAwesomeIcon className="chevron" icon={ slides.length>1 ? faChevronLeft : "" } onClick={ previousImg }/>
                 <FontAwesomeIcon className="chevron" icon={ slides.length>1 ? faChevronRight : "" } onClick={ nextImg }/>
             </div>
-            <div className='img-number'>{ slides.length>1 ? (currentIndex +1) + "/" + (slides.length+1): "" }</div>
+            <div className='img-number'><p>{ slides.length>1 ? (currentIndex +1) + "/" + (slides.length): "" }</p></div>
         </div>
     )
 }
