@@ -12,7 +12,7 @@ const Dropdown = (props) => {
         <div className='dropdown'>
             <div className='dropdown-head'>
                 <div className='dropdown-title' >{props.title}</div>
-                <FontAwesomeIcon className="icon" icon={!open?faChevronUp:faChevronDown} onClick={collapse}/>
+                <FontAwesomeIcon className="icon" icon={!open?faChevronDown:faChevronUp} onClick={collapse}/>
             </div>
             {open && <div className='description' >{props.text}</div>}
         </div>

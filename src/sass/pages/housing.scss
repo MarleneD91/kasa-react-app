@@ -1,0 +1,41 @@
+
+@mixin sliderSizing {
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+.slider{
+    position: relative;
+    @include sliderSizing;
+    margin-bottom: 30px;
+    img{
+        position:absolute;
+        z-index: -1;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+    }
+    .chevrons{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position:absolute;
+        z-index: 1;
+    }
+    .chevron {
+        font-size: 79.2px;
+        color: white;
+        margin: 23.36px;
+    }
+    .img-number {
+        position:absolute;
+        z-index: 2;
+    }
+
+}
