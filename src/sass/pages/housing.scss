@@ -1,1 +1,24 @@
-@use '../components/slider'
+@use '../components/slider';
+@use '../components/dropdown';
+
+.housing-dropdowns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1240px;
+    height: 415px;
+    margin: auto;
+    .dropdown{
+        width: 582px;
+        //margin-left: 76px;
+        .description{
+            font-size: 18px;
+            li{
+            list-style: none;
+            }
+        } 
+        
+    }
+
+
+}
