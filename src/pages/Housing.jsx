@@ -31,8 +31,8 @@ const Housing = () => {
 
     //Get the housing page id
     let housingId = useParams();
-
     const theHousing = housingData.find(element => element.id === housingId.id);
+    console.log(theHousing.location);
 
     //Get imgs form housing data
     const housingImg = theHousing.pictures;
@@ -58,10 +58,22 @@ const Housing = () => {
         <Header />
         <div className='main-housing'>
             <Slider key="slider" slides={housingImg}/>
-            <Housingheader title={theHousing.title} tags={tagsArray.map(e=> <li key={e}>{e}</li>)} hostName={hostInfo.name} hostImg={hostInfo.picture} stars={arrayOf5.map( e => <FontAwesomeIcon className={e <= ratingValue ? "pink-star" : "grey-star"} icon={faStar}/> ) }/>
+            <Housingheader  key={housingId}
+                            id={housingId}
+                            title={theHousing.title}
+                            location={theHousing.location} 
+                            tags={tagsArray.map(e=> <li key={e} className='tag'>{e}</li>)} 
+                            hostName={hostInfo.name} 
+                            hostImg={hostInfo.picture} 
+                            stars={arrayOf5.map( e => <FontAwesomeIcon key={e} className={e <= ratingValue ? "pink-star star" : "grey-star star"} icon={faStar}/> 
+                            )}/>
             <div className='housing-dropdowns'>
-                <Dropdown key={`description${theHousing.id}`} title="Description" text={theHousing.description} isOpen={isOpen} onClick={handleCollapse} />
-                <Dropdown key={`equipments${theHousing.id}`} title="Équipements" text={equipmentArray.map(e => <li key={e}>{e}</li> )}  isOpen={isOpen} onClick={handleCollapse}/>
+                <Dropdown   key={`description${theHousing.id}`} 
+                            title="Description" text={theHousing.description} 
+                            isOpen={isOpen} onClick={handleCollapse} />
+                <Dropdown   key={`equipments${theHousing.id}`}
+                            title="Équipements" text={equipmentArray.map(e => <li key={e}>{e}</li> )}  
+                            isOpen={isOpen} onClick={handleCollapse} />
             </div>
         </div>
         <Footer/>

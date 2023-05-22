@@ -1,17 +1,24 @@
 @use '../components/slider';
 @use '../components/dropdown';
+@use '../components/housing-header';
+
+.main-housing {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
 
 .housing-dropdowns {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 1240px;
-    height: 415px;
     margin: auto;
     .dropdown{
         width: 582px;
         //margin-left: 76px;
         .description{
+            height: max-content;
             font-size: 18px;
             li{
             list-style: none;
@@ -22,3 +29,5 @@
 
 
 }
+
+
