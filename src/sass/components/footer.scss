@@ -7,10 +7,15 @@
     height: 209px;
     background-color: black;
     color: white;
+
     .white-logo {
         width: 122px;
         height: 39.44px;
         margin-top: 66px;
+        @media (max-width: vars.$mobile) {
+            margin-top: 62px;
+            margin-bottom: 12px;
+        }
     }
     .copyright {
         font-family: vars.$main-fonts;
@@ -19,5 +24,8 @@
         font-size: 24px;
         line-height: 142.6%;
         margin-bottom: 29px;
+        @media (max-width: vars.$mobile) {
+            font-size: 12px;
+        }
     }
 }

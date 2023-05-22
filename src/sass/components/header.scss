@@ -5,26 +5,39 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 40px 100px 63px 100px;
+    @media (max-width: vars.$mobile) {
+        margin: 20px;
+        margin-bottom: 16px;
+    }
 }
 .pink-logo {
     height: 68px;
     width: 210.32px;
+    @media (max-width: vars.$mobile) {
+        width: 145px;
+        height: 47px;
+    }
 }
 .navbar{
     display: flex;
     flex-direction: row;
     align-items: center;
     .navlink {
-    margin-left: 57px;
-    color: vars.$main-pink;
-    font-family: vars.$main-fonts;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 142.6%;
-    display: flex;
-    align-items: flex-end;
-    text-align: right;
-    text-decoration: none;
+        margin-left: 57px;
+        color: vars.$main-pink;
+        font-family: vars.$main-fonts;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 142.6%;
+        display: flex;
+        align-items: flex-end;
+        text-align: right;
+        text-decoration: none;
+        @media (max-width: vars.$mobile){
+           font-size: 12px; 
+           text-transform: uppercase;
+           margin-left: 10px;
+        }
     }
     .active {
         text-decoration: underline;
