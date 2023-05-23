@@ -1,5 +1,7 @@
+// LIBRARIES
 import React from 'react';
 
+// React component
 const Banner = (props) => {
     return (
         <div className={`banner ${props.page}-banner`}>

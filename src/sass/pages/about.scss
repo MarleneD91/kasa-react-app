@@ -4,7 +4,7 @@
 
 .about-dropdowns {
     margin: 33px 209px 46px 208px ;
-    @media (max-width: vars.$mobile) {
+    @media (max-width: vars.$tablet) {
         width: math.div(335px, 375px)*100%;
         margin: math.div(20px, 375px)*100%;
         .description {
@@ -13,7 +13,7 @@
     }  
 }
 .about-banner{
-    @media (max-width: vars.$mobile) {
+    @media (max-width: vars.$tablet) {
         width: math.div(336px, 375px)*100%;
         height: 223px;
     }  
