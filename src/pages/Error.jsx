@@ -1,6 +1,10 @@
 import React from 'react'
+
+//HEADER & FOOTER - COMPONENTS
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+
+//STYLESHEET
 import '../sass/pages/error.scss'
 
 const Error = () => {

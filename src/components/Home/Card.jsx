@@ -1,6 +1,8 @@
+//LIBRARIES
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+//React component
 const Card = (props) => {
     return(
             <div className="card-container">

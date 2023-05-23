@@ -1,9 +1,13 @@
+//LIBRARIES
 import React from "react";
+
+//DATA
 import { housingData } from "../../data/HousingData";
+
+//SPECIFIC COMPONENT
 import Card from "./Card";
 
-
-
+//React COMPONENT
 const Gallery = () => {
     return(
         <div className="gallery">

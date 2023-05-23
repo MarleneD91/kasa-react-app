@@ -1,19 +1,18 @@
 import '../src/sass/App.scss';
 import React from 'react';
-
 import {
   BrowserRouter,
   Routes,
   Route
 } from "react-router-dom";
 
-//pages
+//PAGES 
 import Home from './pages/Home'
 import About from './pages/About'
 import Housing from './pages/Housing'
 import Error from './pages/Error'
 
-
+//React App - Routing Logic
 const App = () => {
   return (
     <div>

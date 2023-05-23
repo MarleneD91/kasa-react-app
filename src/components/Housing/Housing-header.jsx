@@ -1,5 +1,7 @@
+//LIBRARIES
 import React from "react";
 
+//React component
 const Housingheader = (props) => {
     return (
         <div className="housing-header" >

@@ -1,30 +1,32 @@
-//libraries
+//LIBRARIES
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
 
-//Common components
+//HEADER & FOOTER - COMPONENTS
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
-//Specific components
+//SSPECIFIC COMPONENTS
 import Slider from '../components/Housing/Slider';
 import Housingheader from '../components/Housing/Housing-header';
 import Dropdown from '../components/Common/Dropdown';
 
-//Data
+//DATA
 import { housingData } from '../data/HousingData';
 
-//Style
+//STYLESHEET
 import '../sass/pages/housing.scss';
 
-//Import icons
+//ICONS
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 
-
+//React component = page
 const Housing = () => {
+
+//1 - Get the data
     //Dropdown manager
     const [isOpen,setIsOpen] = useState(false);
     function handleCollapse() {
@@ -59,7 +61,8 @@ const Housing = () => {
     //Rating
     const arrayOf5 = [1,2,3,4,5];
     const ratingValue = parseInt(theHousing.rating);
-   
+
+//2- Return the JSX with data values    
     return (
     <div>
         <Header />
@@ -88,6 +91,4 @@ const Housing = () => {
     )
 }
 
-
 export default Housing;
-

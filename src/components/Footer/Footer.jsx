@@ -1,5 +1,10 @@
+//LIBRARIES
 import React from "react";
-import WhiteLogo from "./logo-footer.png";
+
+//LOGO
+import WhiteLogo from "../../images/logo-footer.png";
+
+//STYLESHEET
 import '../../sass/components/footer.scss'
 
 const Footer = () => {

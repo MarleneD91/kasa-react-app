@@ -1,10 +1,16 @@
+//LIBRARIES
 import React from "react";
+
+//COMPONENT
 import Navbar from "./NavBar";
-import PinkLogo from "./logo.png"
+
+//LOGO
+import PinkLogo from "../../images/logo.png"
+
+//STYLESHEET
 import '../../sass/components/header.scss'
 
-
-
+//React component
 const Header = () => {
     return (
         <div className="header">

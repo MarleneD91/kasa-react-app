@@ -1,13 +1,18 @@
-import React from 'react'
+import React from 'react';
+
+// HEADER & FOOTER - COMPONENTS
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+
+// SPECIFIC COMPONENTS
 import Banner from '../components/Common/Banner';
-import Img from "../components/Common/about-banner-img.png"
+import Img from "../images/about-banner-img.png"
 import AboutDropdown from '../components/About/About-Dropdown';
+
+// STYLESHEET
 import '../sass/pages/about.scss'
 
-
-
+//React component
 const About = () => {
     return(
     <div>

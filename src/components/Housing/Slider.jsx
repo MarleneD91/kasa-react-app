@@ -1,12 +1,12 @@
+//LIBRARIES
 import React, { useState } from 'react';
 
-//Import icons
+//ICONS
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { faChevronRight} from '@fortawesome/free-solid-svg-icons';
 
-//import { housingData } from '../../data/HousingData';
-
+//React component
 const Slider = ({slides}) => {
     const [currentIndex, setCurrentIndex] = useState (0);
 

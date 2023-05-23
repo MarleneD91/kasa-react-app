@@ -1,11 +1,18 @@
 import React from 'react';
+
+//HEADER & FOOTER - COMPONENTS
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
-import Gallery from '../components/Home/Gallery';
-import '../sass/pages/home.scss'
-import Banner from '../components/Common/Banner';
-import Img from "../components/Common/home-banner-img.png"
 
+//SPECIFIC COMPONENTS
+import Gallery from '../components/Home/Gallery';
+import Banner from '../components/Common/Banner';
+import Img from "../images/home-banner-img.png"
+
+//STYLESHEET
+import '../sass/pages/home.scss'
+
+//React component = page
 const Home = () => {
     return(
         <div>

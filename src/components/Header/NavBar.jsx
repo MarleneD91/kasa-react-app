@@ -1,6 +1,8 @@
+//LIBRARIES
 import React from "react";
 import {NavLink} from "react-router-dom";
 
+//React component
 const Navbar = () => {
   return ( 
   	<nav className="navbar" role="navigation" aria-label="navigation">
