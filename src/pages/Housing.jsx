@@ -1,6 +1,7 @@
 //libraries
-import React, { useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 //Common components
 import Header from "../components/Header/Header";
@@ -17,10 +18,11 @@ import { housingData } from '../data/HousingData';
 //Style
 import '../sass/pages/housing.scss';
 
-//Icons
 //Import icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+
+
 
 const Housing = () => {
     //Dropdown manager
@@ -30,10 +32,16 @@ const Housing = () => {
     }
 
     //Get the housing page id
-    let housingId = useParams();
-    const theHousing = housingData.find(element => element.id === housingId.id);
-    console.log(theHousing.location);
+    let { housingId }= useParams();
 
+    //Get housing (id-entified) data
+    const theHousing = housingData.find(element => element.id === housingId);
+
+    //Go to error page with a wrong housing url id
+    if (!theHousing) {
+        return <Navigate to="/error"/>;
+    }
+  
     //Get imgs form housing data
     const housingImg = theHousing.pictures;
 
@@ -51,9 +59,8 @@ const Housing = () => {
     //Rating
     const arrayOf5 = [1,2,3,4,5];
     const ratingValue = parseInt(theHousing.rating);
-    
-
-    return(
+   
+    return (
     <div>
         <Header />
         <div className='main-housing'>
@@ -81,4 +88,6 @@ const Housing = () => {
     )
 }
 
+
 export default Housing;
+

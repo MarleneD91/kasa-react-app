@@ -10,8 +10,9 @@
     flex-wrap: wrap;
     background: #F7F7F7;
     border-radius: 25px;
-    border-radius: 25px;
-    margin: 43px 100px;
+    width: math.div(1240px, 1440px)*100%;
+    margin: 43px auto;
+    padding-top: 31px;
     @media  (max-width: vars.$mobile ) {
         flex-direction: column;
         align-items: center;

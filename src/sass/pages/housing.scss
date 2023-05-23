@@ -1,33 +1,48 @@
 @use '../components/slider';
 @use '../components/dropdown';
 @use '../components/housing-header';
+@use '../components/vars.scss';
+@use "sass:math";
 
 .main-housing {
-    margin: 0 auto;
+    margin: 0 math.div(100px, 1440px)*100%;
     display: flex;
     flex-direction: column;
+    width: math.div(1240px, 1440px)*100%;
+    @media (max-width: vars.$mobile) {
+        width: math.div(335px,375px)*100%;
+        margin: auto;
+    }
 }
 
 .housing-dropdowns {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1240px;
+    width: 100%;
     margin: auto;
+    @media (max-width: vars.$mobile) {
+        flex-direction: column;
+    }
     .dropdown{
-        width: 582px;
-        //margin-left: 76px;
+        width: math.div(582px, 1240px)*100%;
+        font-size: 18px;
+        @media (max-width: vars.$mobile) {
+            width: 100%;
+        }
         .description{
             height: max-content;
             font-size: 18px;
+            min-height: 249px;
+            @media (max-width: vars.$mobile) {
+                font-size: 12px;
+                min-height: 143.32px;
+            }
             li{
             list-style: none;
             }
-        } 
-        
+        }  
     }
-
-
 }
 
 

@@ -32,6 +32,7 @@
         font-size: 48px;
         line-height: 68px;
         margin:0;
+        width: math.div(705px, 1240px)*100%;
         @media (max-width: vars.$mobile) {
             text-align:left;
             left: 16px;
@@ -42,7 +43,6 @@
             transform: translate(-9.6%,-50%);
             margin-left: 16px;
             width: math.div(217px, 335px)*100%;
-
         }
     }
 }

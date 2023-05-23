@@ -5,16 +5,13 @@ import Gallery from '../components/Home/Gallery';
 import '../sass/pages/home.scss'
 import Banner from '../components/Common/Banner';
 import Img from "../components/Common/home-banner-img.png"
-import { housingData } from '../data/HousingData';
-
 
 const Home = () => {
-    console.log(housingData);
     return(
         <div>
             <Header/>
             <div className="main-home">
-                <Banner img={Img} text="Chez vous, partout et ailleurs"/>
+                <Banner page="home" img={Img} text="Chez vous, partout et ailleurs"/>
                 <Gallery/> 
             </div>
             <Footer/>        

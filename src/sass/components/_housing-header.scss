@@ -1,32 +1,52 @@
 @use '../components/vars.scss';
+@use "sass:math";
 
 
 .housing-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1240px;
+    width: 100%;
     color: vars.$main-pink;
     font-family: vars.$main-fonts;
     margin : auto;
     margin-bottom: 24px;
     font-weight: 500;
+    @media (max-width: vars.$mobile) {
+        flex-direction: column;
+    }
     .title-location-and-tags {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        width: 65%;
+        @media (max-width: vars.$mobile) {
+            width: 100%;
+        }
         .title-and-loc{
-            width: 635px;
+            width: 100%;
+            @media (max-width: vars.$mobile) {
+                width: 100%;
+            }
             h1 {
                 font-weight: 500;
                 font-size: 36px;
                 line-height: 51px;
                 margin: 0 auto;
+                width: 100%;
+                @media (max-width: vars.$mobile) {
+                    font-size: 18px;
+                    line-height: 142.6%;
+                }
             }
             .location {
                 font-size: 18px;
                 line-height: 142.6%;
                 margin: 0 auto 20px;
+                @media (max-width: vars.$mobile) {
+                    font-size: 14px;
+                    margin: 5px auto 10px;
+                }
             }
         }
         .tags {
@@ -35,15 +55,26 @@
             flex-direction: row;
             justify-content: flex-start;
             list-style-type: none;
-            .tag{
+            min-width: math.div(115px, 1440px)*100%;
+            @media (max-width: vars.$mobile) {
+                flex-wrap: wrap;
+                min-width: math.div(84px, 375px)*100%;
+            }
+            .tag {
                 background-color: vars.$main-pink;
-                height: 25px;
                 border-radius: 10px;
-                padding: 3px 40px;        
+                padding: 2.5px 40px;        
                 margin-right: 10px;
-                font-family: Montserrat;
+                margin-bottom: 10px;
                 font-size: 14px;
-                line-height: 20px;
+                line-height: 142.6%;;
+
+                @media (max-width: vars.$mobile) {
+                    font-size: 10px;
+                    padding: 2px 30px;
+                    line-height: 14.26px;
+                    border-radius: 5px;
+                }
             }
 
         }
@@ -52,6 +83,14 @@
     .host-and-rate {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 26px;
+        @media (max-width: vars.$mobile) {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 16px;
+        }
         .host {
             display: flex;
             flex-direction: row;
@@ -63,18 +102,34 @@
                 font-size: 18px;
                 line-height: 26px;
                 text-align: right;
+                @media (max-width: vars.$mobile) {
+                    font-size: 12px;
+                    line-height: 142.6%;
+                    width: 60%;
+                }
             }
             img {
                 height: 64px;
                 width: 64px;
                 border-radius: 50%;
+                @media (max-width: vars.$mobile) {
+                    height: 32px;
+                    width: 32px;
+                }
             }
         }
         .rating-stars {
-            margin: 27px 0px 37px;
+            //margin: 27px 0px 37px;
+            @media (max-width: vars.$mobile) {
+                margin: 0px;
+            }
             .star{
                 height: 24px;
                 margin-right: 15.25px;
+                @media (max-width: vars.$mobile) {
+                    height: 13px;
+                    margin-right: 6.59px;
+                }
             }
             .pink-star{
                 color: vars.$main-pink;

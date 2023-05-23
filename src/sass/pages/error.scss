@@ -1,4 +1,5 @@
 @use '../components/vars.scss';
+@use "sass:math";
 
 .main-error {
     display: flex;
@@ -11,6 +12,12 @@
         margin-top: 66px;
         font-weight: 500;
         line-height: 142.6%;
+        @media (max-width: vars.$mobile) {
+            font-size: 18px;
+            margin-top: 11px;
+            width: math.div(260px, 375px)*100%;
+            text-align: center;
+        }
     }
     a{
         color:vars.$main-pink;
@@ -19,10 +26,19 @@
         font-size: 18px;
         font-weight: 500;
         line-height: 142.6%;
+        @media (max-width: vars.$mobile) {
+            font-size: 14px;
+            margin-top: 133px;
+            margin-bottom: 235px;
+        }         
     }
     .error-number {
-    font-weight: 700;
-    font-size: 240px;
-    margin-top: 169px;
+        font-weight: 700;
+        font-size: 240px;
+        margin-top: 169px;
+        @media (max-width: vars.$mobile) {
+            font-size: 96px;
+            margin-top: 195px;
+        }        
     }
 }

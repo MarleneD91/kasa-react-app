@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Card = (props) => {
     return(
             <div className="card-container">
-                <Link to={props.url}>
+                <Link to={props.url} >
                     <div className="card-content">
                         <div className="gradient"></div>
                         <img src={props.cover} alt={props.title} />

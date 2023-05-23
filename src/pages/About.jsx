@@ -13,7 +13,7 @@ const About = () => {
     <div>
         <Header/>
         <div className="main-about">
-            <Banner img={Img}/> 
+            <Banner page="about" img={Img}/> 
             <AboutDropdown/>
         </div>
         <Footer/>
