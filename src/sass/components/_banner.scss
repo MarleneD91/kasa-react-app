@@ -27,18 +27,20 @@
         z-index: 2;
         color: #FFFFFF;
         text-align: center;
-        font-family: vars.$main-fonts;
         font-weight: 500;
         font-size: 48px;
-        line-height: 68px;
+        font-family: vars.$main-fonts;
+        line-height: vars.$line-height;
         margin:0;
         width: math.div(705px, 1240px)*100%;
+        @media (max-width: vars.$tablet) {
+            font-size: 40px;
+        }
         @media (max-width: vars.$mobile) {
             text-align:left;
             left: 16px;
             font-size: 24px;
-            line-height: 24px;
-            top: 50%;
+            line-height: 100%;
             left: 9.6%;
             transform: translate(-9.6%,-50%);
             margin-left: 16px;

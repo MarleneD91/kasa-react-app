@@ -8,12 +8,10 @@
     margin: math.div(25px, 1240px)*100%;
     position: relative;
     @media (max-width: vars.$small-screen) {
-        width: math.div(255px, 1033px)*100%;
         height: 255px;
         margin: math.div(21px, 1033px)*100%;  
     }
     @media (max-width: vars.$tablet){
-        width: math.div(212px, 861px)*100%;
         height: 212px;
         margin: math.div(17px, 861px)*100%; 
     }
