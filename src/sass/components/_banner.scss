@@ -7,6 +7,9 @@
     margin:auto;
     border-radius: 25px;
     position: relative;
+    @media (max-width: vars.$tablet) {
+        height: 175px;
+    }
     @media (max-width: vars.$mobile) {
         width: math.div(335px, 375px)*100%;
         height: 111px;
@@ -21,9 +24,7 @@
     }
     p{
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        width: 100%;
         z-index: 2;
         color: #FFFFFF;
         text-align: center;
@@ -32,7 +33,7 @@
         font-family: vars.$main-fonts;
         line-height: vars.$line-height;
         margin:0;
-        width: math.div(705px, 1240px)*100%;
+        top: 35%;
         @media (max-width: vars.$tablet) {
             font-size: 40px;
         }
@@ -45,6 +46,7 @@
             transform: translate(-9.6%,-50%);
             margin-left: 16px;
             width: math.div(217px, 335px)*100%;
+            top: 50%;
         }
     }
 }
