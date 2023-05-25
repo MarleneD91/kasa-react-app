@@ -6,8 +6,8 @@ import {NavLink} from "react-router-dom";
 const Navbar = () => {
   return ( 
   	<nav className="navbar" role="navigation" aria-label="navigation">
-        <NavLink className="navlink" to="/">Accueil</NavLink>
-        <NavLink className="navlink" to="/about">A propos</NavLink>
+        <NavLink className={({ isActive }) => "navlink" + (isActive ? ' active' : '')} to="/">Accueil</NavLink>
+        <NavLink className={({ isActive }) => "navlink" + (isActive ? ' active' : '')} to="/about">A propos</NavLink>
     </nav>
   );
  };
