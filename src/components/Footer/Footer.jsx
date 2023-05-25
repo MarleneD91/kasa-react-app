@@ -2,7 +2,7 @@
 import React from "react";
 
 //LOGO
-import WhiteLogo from "../../images/logo-footer.png";
+import WhiteLogo from "../../images/white-logo.svg";
 
 //STYLESHEET
 import '../../sass/components/footer.scss'

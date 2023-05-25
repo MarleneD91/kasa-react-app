@@ -5,7 +5,7 @@ import React from "react";
 import Navbar from "./NavBar";
 
 //LOGO
-import PinkLogo from "../../images/logo.png"
+import PinkLogo from "../../images/pink-logo.svg"
 
 //STYLESHEET
 import '../../sass/components/header.scss'
