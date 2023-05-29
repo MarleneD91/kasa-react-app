@@ -7,9 +7,9 @@
     @media (max-width: vars.$tablet) {
         width: math.div(335px, 375px)*100%;
         margin: math.div(20px, 375px)*100%;
-        .description {
+        /*.description {
             min-height: 143.65px;
-        }
+        }*/
     }  
 }
 .about-banner{

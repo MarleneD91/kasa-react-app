@@ -7,7 +7,7 @@ import { Navigate } from 'react-router-dom';
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
-//SSPECIFIC COMPONENTS
+//SPECIFIC COMPONENTS
 import Slider from '../components/Housing/Slider';
 import Housingheader from '../components/Housing/Housing-header';
 import Dropdown from '../components/Common/Dropdown';

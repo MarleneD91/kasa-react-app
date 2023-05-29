@@ -24,21 +24,21 @@
     @media (max-width: vars.$mobile) {
         flex-direction: column;
     }
-    .dropdown{
+    .dropdown {
         width: math.div(582px, 1240px)*100%;
         font-size: 18px;
         @media (max-width: vars.$mobile) {
             width: 100%;
         }
-        .description{
+        .description {
             height: max-content;
             font-size: 18px;
-            min-height: 249px;
+            //min-height: 249px;
             @media (max-width: vars.$mobile) {
                 font-size: 12px;
-                min-height: 143.32px;
+                //min-height: 143.32px;
             }
-            li{
+            li {
             list-style: none;
             }
         }  
