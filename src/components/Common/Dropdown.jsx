@@ -14,9 +14,9 @@ const Dropdown = (props) => {
     }
     return(
         <div className='dropdown'>
-            <div className='dropdown-head'>
+            <div className='dropdown-head' onClick={collapse}>
                 <div className='dropdown-title' >{props.title}</div>
-                <FontAwesomeIcon className="icon" icon={!open?faChevronDown:faChevronUp} onClick={collapse}/>
+                <FontAwesomeIcon className="icon" icon={!open?faChevronDown:faChevronUp}/>
             </div>
             {open && <div className='description' >{props.text}</div>}
         </div>

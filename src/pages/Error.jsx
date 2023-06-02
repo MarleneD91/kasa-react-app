@@ -9,7 +9,7 @@ import '../sass/pages/error.scss'
 
 const Error = () => {
     return(
-    <div>
+    <>
         <Header/>
         <div className="main-error">
             <span className="error-number">404</span>
@@ -17,7 +17,7 @@ const Error = () => {
             <a href="/">Retourner sur la page d'accueil</a>
         </div>
         <Footer/>
-    </div>
+    </>
     )
 }
 

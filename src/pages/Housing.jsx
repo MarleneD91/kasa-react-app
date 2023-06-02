@@ -64,7 +64,7 @@ const Housing = () => {
 
 //2- Return the JSX with data values    
     return (
-    <div>
+    <>
         <Header />
         <div className='main-housing'>
             <Slider key="slider" slides={housingImg}/>
@@ -87,7 +87,7 @@ const Housing = () => {
             </div>
         </div>
         <Footer/>
-    </div>
+    </>
     )
 }
 

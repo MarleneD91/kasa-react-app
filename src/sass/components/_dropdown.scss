@@ -22,6 +22,7 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
+            cursor: pointer;
             @media (max-width: vars.$mobile) {
                 font-size: 13px;
                 height: 29.96px;
@@ -46,7 +47,6 @@
         }
         .icon {
             padding-right: 1.77%;
-            cursor: pointer;
         }
     }
 

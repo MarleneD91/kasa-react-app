@@ -15,14 +15,14 @@ import '../sass/pages/home.scss'
 //React component = page
 const Home = () => {
     return(
-        <div>
+        <>
             <Header/>
             <div className="main-home">
                 <Banner page="home" img={Img} text="Chez vous, partout et ailleurs"/>
                 <Gallery/> 
             </div>
             <Footer/>        
-        </div> 
+        </> 
                
     )
 };

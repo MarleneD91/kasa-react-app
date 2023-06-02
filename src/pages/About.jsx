@@ -15,14 +15,14 @@ import '../sass/pages/about.scss'
 //React component
 const About = () => {
     return(
-    <div>
+    <>
         <Header/>
         <div className="main-about">
             <Banner page="about" img={Img}/> 
             <AboutDropdown/>
         </div>
         <Footer/>
-    </div>
+    </>
     )
 }
 
